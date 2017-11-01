@@ -30,6 +30,8 @@ If you name it `config.xml`, you can use the following curl command: (unix users
 
 `curl -X POST --anyauth --user admin:admin -d @"./config.xml" -H "Content-type: application/xml" http://localhost:8002/LATEST/rest-apis`
 
+Double-check that the authentication is set to "basic".
+
 7. Load some example data to the server. The folder openausdocs contains five dated files of sessions as well as two files with data about the senators: `people.xml` and `senators.xml`. One way to load the files is to use the admin interface on port 8001. Follow the path Configure - Databases - debates and select the Load tab. Enter the directory name where you want to load the files from. More example data can be found at http://data.openaustralia.org/
 
 8. Set up Node.js server. Copy the contents of Server folder to your folder of choice. Install and update the required node dependencies and start the server: `node tripleserver.js`.
