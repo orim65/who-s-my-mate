@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'Alpha54';
+  src: url('Alpha54.ttf') format('truetype');
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 10pt;
+  margin-left: 15pt;
+  margin-right: 15pt;
+}      
+
+header {
+  font-family: Alpha54;
+  color: #008751;
+  background-color: #FCD116;
+}
+
+header h1 {
+  font-size: 40pt;
+  margin: 2px;
+}
+
+header span {
+  font-size: 24pt;
+}
+
+h1 {
+  padding: 6px;
+}
+
+nav, #content {
+  float: left;
+}
+
+div.row {
+  width: 100%;
+}
+
+div.columnleft {	
+  border: 1px solid #008751;
+  float: left;
+  width: 48%;
+  padding: 1px;
+  margin: 1px;
+}
+
+div.columnright {	
+  border: 1px solid #008751;
+  float:right;
+  width: 48%;
+  padding: 1px;
+  margin: 1px;
+}
+
+
+div#triplesform {
+  clear: both;
+  border: 1px solid #008751;
+  padding:10px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+div#triplesform h2 {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+div#content {
+  border: 1px groove;
+  padding: 10px;
+  counter-reset: result;
+  height: 300px;
+  overflow-y: auto;
+}
+
+div.result::before {
+  counter-increment: result;
+  content: counter(result) ":";
+}
+
+div.feedback {
+  display: block;
+  float: right;
+    
+}
+
+div#status {
+  display:block;
+  float:right;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+div#search {
+  border: 2px groove #008751;
+  height: 140px;
+  padding:10px;
+}
+
+div#matesearch {
+//  border: 1px dashed blue;
+  float: left;
+  height: 140px;
+  width: 48%;
+  padding: 8px;
+}
+
+div#matebox {
+  float:right;
+  width: 48%;
+  padding: 1px;
+  margin: 1px;
+}
+
+#mymate {
+  display: inline;
+  float: right;
+  overflow: hidden;
+}
+
+form {
+  margin:3px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table {
+  border-bottom: double;
+}
+td {
+  padding: 2pt;
+}
+th {
+  background-color: rgb(190,190,190);
+  text-align: left;
+}
+tr:nth-child(odd) {
+  background-color: rgb(230,230,230);
+}
+tr:nth-child(even), button {
+  background-color: rgb(255,255,255);
+}     
+
+th.subj, th.obj {
+  width: 130px;
+}
+th.pred {
+  width: 120px;
+}      
+th.action {
+  width: 130px;
+}
+td.action {      
+  text-align: center;
+}
+
+
+button {
+  position: relative;
+  top: -2px;
+  margin-left: 5px;
+  margin-top: 4px;
+  box-shadow: 3px 3px 2px rgb(5,5,5);
+  border: 1pt solid rgb(5,5,5);
+}
+
+button.minus {
+  position: relative;
+  top: -8px;
+  font-size: 11pt;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px rgb(5,5,5);  
+}
+
+div.result p {
+  text-align: justify;
+}
+
+
+.checkitem {
+  display: inline;
+//  white-space: nowrap;
+}
+
+

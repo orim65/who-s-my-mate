@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Who's Your Mate?</title>  
+    <link rel="stylesheet" type="text/css" href="css/mate.css">
+    <script src="js/mymate.js"></script>    
+  </head>
+  <body>
+    <header>
+      <h1>Who's your mate? <span class="sub">...in Australian politics</span></h1>
+    </header>
+
+<!-- 
+    <div id="searchform"></div>
+ -->
+    <div class="row">
+    <div class="columnleft">
+      <div id="search"> 
+        <form>
+          <fieldset>
+            <legend>Search debates for a topic</legend>
+            <input id="q1" type="text" name="query" size="50" />
+          </fieldset>
+        </form>
+        <form>
+          <fieldset>
+            <legend>and/or by speaker</legend>
+            <input id="q2" type="text" name="speaker" size="50" />
+          </fieldset>
+        </form>
+        <div>
+          <button onclick="search()">Show results</button>
+          <div id="status"> </div>
+        </div>
+      </div>
+     
+      <div id="content">
+      </div>
+
+    </div>
+    <div class="columnright">
+      <div class="row">
+        <div id="matesearch">
+          <p>Record your observations below. Include the senator's <b>last name</b> as part of the subject. For example:</p>
+          <p>&nbsp;&nbsp;Senator <b>Wong</b>&nbsp;&nbsp;&nbsp;supports&nbsp;&nbsp;&nbsp;marriage equality</p>
+          <p>Then save your observations on the server.</p>
+        </div>
+        <div id="matebox">
+          <iframe height="140" name="mymate" src="defaultmate.html"></iframe> 
+        </div>
+      </div>
+      <div id="triplesform"></div>
+    </div>
+  </div>
+  <script src="js/react.js"></script>
+  <script src="js/react-dom.js"></script>
+  <script src="js/babel.min.js"></script>
+  <script type="text/babel" src="js/triplesform.js"></script>
+<!-- 
+ <script type="text/babel" src="js/searchform.js"></script>
+ -->
+     
+
+  <script src="js/axios.min.js"></script>
+    
+</body>
+</html>
